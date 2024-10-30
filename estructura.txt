@@ -1,0 +1,27 @@
+.
+├── .env
+├── .eslintrc.js
+├── estructura.txt
+├── .git
+│   ├── branches
+│   ├── config
+│   ├── description
+│   ├── HEAD
+│   ├── hooks
+│   ├── info
+│   ├── objects
+│   └── refs
+├── .gitignore
+├── nest-cli.json
+├── package.json
+├── package-lock.json
+├── .prettierrc
+├── README.md
+├── src
+├── test
+│   ├── app.e2e-spec.ts
+│   └── jest-e2e.json
+├── tsconfig.build.json
+└── tsconfig.json
+
+
