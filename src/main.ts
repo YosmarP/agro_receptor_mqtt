@@ -14,9 +14,6 @@ async function bootstrap() {
       },
     },
   );
-  // console.log(process.env.MQTT_BROKER_URL);
-  // await app.listen();
-  const port = process.env.PORT || 10000; // Puerto predeterminado de Render
   await app.listen();
 }
 bootstrap();
