@@ -14,7 +14,7 @@ async function bootstrap() {
       },
     },
   );
-
+  console.log(process.env.MQTT_BROKER_URL);
   await app.listen();
 }
 bootstrap();
