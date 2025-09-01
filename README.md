@@ -23,6 +23,9 @@
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Description
+# background tasks
+MQTT receptor
+Crons
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 

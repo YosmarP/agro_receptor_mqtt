@@ -48,7 +48,8 @@ export class MqttService {
 
   constructor(private readonly httpService: HttpService) {
     this.apiUrl =
-      process.env.API_URL || 'http://localhost:3003/agrosensor/data';
+      process.env.API_URL + '/agrosensor/data' ||
+      'http://localhost:3003/agrosensor/data';
     console.log('API URL:', this.apiUrl); // Verifica que la URL sea correcta
   }
 
