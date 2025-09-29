@@ -64,7 +64,9 @@ export class MqttService {
       };*/
       const data = {
         ...message,
-        timestamp: new Date().toISOString(),
+        //timestamp: new Date().toISOString(),
+        timestamp:
+          message.timestamp || message.time || new Date().toISOString(),
       };
 
       console.log('Processing data:', data);
