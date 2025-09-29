@@ -50,7 +50,7 @@ export class CronService {
     }
   }
 
-    @Cron(CronExpression.EVERY_10_MINUTES, {
+  @Cron(CronExpression.EVERY_10_MINUTES, {
     timeZone: 'Europe/Madrid',
   })
   async keepAlivePing() {
@@ -60,7 +60,7 @@ export class CronService {
         Authorization: `Bearer ${process.env.INTERNAL_API_TOKEN}`,
       };
       const response = await firstValueFrom(
-       this.httpService.get(
+        this.httpService.get(
           `${process.env.API_URL}/agrosensor/data?stationId=1`,
           { headers },
         ),
@@ -70,5 +70,4 @@ export class CronService {
       console.error('Error en keep-alive:', error.message);
     }
   }
-
 }

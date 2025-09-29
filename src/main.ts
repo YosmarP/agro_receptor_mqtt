@@ -2,9 +2,12 @@ import { NestFactory } from '@nestjs/core';
 import { MicroserviceOptions, Transport } from '@nestjs/microservices';
 import { AppModule } from './app.module';
 import * as dotenv from 'dotenv';
-import * as crypto from 'crypto';
+import { randomUUID } from 'crypto';
+// import * as crypto from 'crypto';
 
-(global as any).crypto = crypto;
+(global as any).randomUUID = randomUUID;
+
+// (global as any).crypto = crypto;
 dotenv.config(); // Carga las variables de entorno
 async function bootstrap() {
   const app = await NestFactory.createMicroservice<MicroserviceOptions>(
